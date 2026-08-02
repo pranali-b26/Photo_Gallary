@@ -1,0 +1,84 @@
+/* =========================
+   HERO SLIDER WRAPPER
+========================= */
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   SLIDE IMAGE
+========================= */
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s ease;
+}
+
+/* =========================
+   ARROW BUTTONS
+========================= */
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.slider-arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.slider-arrow.left {
+  left: 15px;
+}
+
+.slider-arrow.right {
+  right: 15px;
+}
+
+/* =========================
+   SLIDER CONTENT (TEXT IF ANY)
+========================= */
+
+.hero-slider-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 220px;
+  }
+
+  .slider-arrow {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+}

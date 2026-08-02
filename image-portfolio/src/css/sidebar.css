@@ -1,0 +1,59 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: #111;
+  color: white;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+/* MENU CONTAINER */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* LINKS */
+.menu a {
+  color: white;
+  text-decoration: none;
+
+  padding: 10px 12px;
+  border-radius: 6px;
+
+  display: block;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.menu a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ACTIVE PAGE */
+.menu a.active {
+  background: #1d4ed8;
+  color: white;
+  font-weight: bold;
+}
+
+/* CLICK EFFECT */
+.menu a:active {
+  transform: scale(0.98);
+}

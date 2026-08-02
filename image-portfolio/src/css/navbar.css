@@ -1,0 +1,33 @@
+.navbar{
+margin-left:270px;
+height:70px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.navbar input{
+width:75%;
+padding:12px;
+border:none;
+background:#f3f3f3;
+border-radius:30px;
+font-size:16px;
+outline:none;
+}
+
+.profile{
+width:45px;
+height:45px;
+border-radius:50%;
+background:#0d1b4c;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+cursor:pointer;
+}
